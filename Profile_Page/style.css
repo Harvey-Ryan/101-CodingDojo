@@ -1,24 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Courier New';
 }
-
-/* a:link {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
-}
-
-a:visited {
-    color: whitesmoke
-} */
 
 #container{
     display: flex;
@@ -26,7 +10,10 @@ a:visited {
     justify-content: center;
     margin: 0px auto;
 }
-
+.seattle{
+    font-weight: bold;
+    font-size: 16pt;
+}
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -35,7 +22,7 @@ a:visited {
     height: 150;
     background-color: black;
     color: whitesmoke;
-    padding: 0 10% 0 10%; /*reduces nav bar to 80% cenetered */
+    padding: 0 10% 0 10%;
 }
 
 .left-nav-bar{
@@ -49,11 +36,11 @@ a:visited {
 
 .nav-bar-links{
     display: flex;
+    justify-content: flex-start;
     flex: 1;
     width: 30%;
     gap: 20px;
     padding-left: 30px;
-    align-items: flex-start;
 }
 
 .nav-bar-link{
@@ -68,7 +55,7 @@ a:visited {
 
 .right-nav-bar{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     width: 10%;
     padding-right: 10%;
@@ -81,6 +68,7 @@ a:visited {
 
 .nav-sign-out{
     width: 100px;
+    align-items: flex-end;
 }
 
 .main-body{
@@ -101,14 +89,11 @@ a:visited {
     display: flex;
     flex: 2;
     flex-direction: column;
-    /* justify-content: space-evenly;  */
-    /* margin: 20px; */
-    /* padding: 0 10% 0 10%; */
 }
 
 .card{
     width: 100%;
-    border-top:100px solid rgb(86, 190, 255); /* only exists for top border */
+    border-top:100px solid rgb(86, 190, 255);
 }
 
 .personal-info{
@@ -118,7 +103,7 @@ a:visited {
     border-left: 2px solid gray;
     border-right: 2px solid gray;
     position: relative;
-    top: -155px; /compensation for prof pic positioning/
+    top: -155px;
     padding: 75px 20px 15px 20px;
     font-family: helvetica;
 }
@@ -128,7 +113,6 @@ a:visited {
     position: relative;
     top: -80px;
     margin-left: 10px;
-    /* /* padding-left: 40px; / */
     border-radius: 50%;
 }
 
@@ -159,7 +143,7 @@ a:visited {
     display: flex;
     height: 0 auto;
     flex-direction: column;
-    margin: -130px 0 10px 0;
+    margin: -130px 0 0 0;
     background-color: gray;
     color: whitesmoke;
     border: 2px solid gray;
@@ -173,17 +157,14 @@ a:visited {
 }
 
 .main-right{
-    / display: flex; /
     flex: 1;
     flex-direction: column;
     width: 0 auto;
     height: 0 auto;
     background-color: rgb(255, 255, 255);
-    border: 2px solid black;
 }
 
 .connection_info{
-    padding: 5px;
     border: 2px solid black;
     background-color: rgb(126, 126, 126);
 }
@@ -192,14 +173,17 @@ h4{
 }
 span{
     background-color: rgb(255, 255, 255);
+    color: black;
     border-radius: 50%;
-    / width: 5px; */
 }
+
 .people{
     display: flex;
     align-items: center;
-    margin: 5px;
+    padding: 5px;
+    justify-content: space-between;
 }
+
 .people_right{
     display: flex;
     justify-content: flex-start;
@@ -209,16 +193,40 @@ span{
     border: 2px solid black;
 }
 .req-icons{
-
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
 }
 
 .connections-box{
     margin-top: 20px;
-    padding: 5px;
     border: 2px solid black;
     background-color: rgb(126, 126, 126);
 }
 
-.my_connections{
+.stupid_people{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+}
 
+.yesno{
+    width: 52px;
+}
+
+.people_request{
+    background-color: white;
+}
+
+.my_con_title{
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.view_more{
+    border-top: 2px solid black;
+    background-color: white;
+    padding: 5px;
 }
