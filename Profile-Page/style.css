@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-a:link {
+/* a:link {
     text-decoration: none;
     color: whitesmoke;
 }
@@ -18,7 +18,7 @@ a:active {
 
 a:visited {
     color: whitesmoke
-}
+} */
 
 #container{
     display: flex;
@@ -55,21 +55,14 @@ a:visited {
     padding-left: 30px;
 }
 
-/* .nav-bar-link a:active, .nav-bar-link a:hover{
-    text-decoration: underline;
-    color: whitesmoke;
-} */
-
-/* Trying to figure out how to get underline on hover in nav bar again without bulk code @ top of CSS */
-
-/*.nav-bar-link a:link{
-    text-decoration: none;
-} */
-
 .nav-bar-link{
     display: flex;
     color: whitesmoke;
     text-decoration: none;
+}
+
+.nav-bar:active, .nav-bar-link:hover{
+    text-decoration: underline;
 }
 
 .right-nav-bar{
@@ -89,12 +82,27 @@ a:visited {
     width: 100px;
 }
 
+.main-body{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0 10% 0 10%;
+    padding: 10px;
+}
+
+.main-left{
+    display: flex;
+    flex: 2;
+    margin-right: 20px;
+}
+
 .prof-card{
     display: flex;
     flex: 2;
-    justify-content: space-evenly; /*centers entire card */
-    margin: 20px;
-    padding: 0 10% 0 10%;
+    flex-direction: column;
+    /* justify-content: space-evenly;  */
+    /* margin: 20px; */
+    /* padding: 0 10% 0 10%; */
 }
 
 .card{
@@ -135,4 +143,69 @@ a:visited {
 .settings a:active, .settings a:link, .settings a:hover, .settings a:visited{
     text-decoration: underline;
     color: blue;
+}
+
+.education{
+    display: flex;
+    height: 0 auto;
+    flex-direction: column;
+    margin: -130px 0 10px 0;
+    background-color: gray;
+    color: whitesmoke;
+    border: 2px solid gray;
+    padding: 0
+}
+
+.ed-info{
+    background-color: white;
+    color: black;
+    padding: 2%;
+}
+
+.main-right{
+    /* display: flex; */
+    flex: 1;
+    flex-direction: column;
+    width: 0 auto;
+    height: 0 auto;
+    /* margin: 10px; */
+    background-color: gray;
+    /* justify-content: left; */
+}
+
+.requests{
+    display: flex;
+    flex: 1;
+    padding: 2%;
+}
+
+.req-banner{
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+}
+
+.req-count{
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: rgb(212, 212, 212);
+    border-radius: 20px;
+    /* width: 0 auto; */
+}
+
+.req-title{
+    /* flex-direction: column; */
+    /* width: 0 auto; */
+}
+
+.req-icons{
+
+}
+
+.connections-box{
+
+}
+
+.connections{
+
 }
